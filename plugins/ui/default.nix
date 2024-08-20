@@ -1,6 +1,5 @@
 {
   imports = [
-    ./core
-    ./ui
+    ./nvim-tree.nix
   ];
 }
