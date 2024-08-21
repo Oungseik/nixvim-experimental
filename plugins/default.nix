@@ -1,6 +1,6 @@
 {
   imports = [
-    ./core
+    ./editor
     ./lang-features
     ./ui
   ];
