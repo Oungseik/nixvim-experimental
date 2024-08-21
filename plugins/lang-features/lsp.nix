@@ -15,11 +15,34 @@
     lsp-format.enable = true;
     lspkind.enable = true;
 
-
     lsp = {
       enable = true;
 
+      servers = {
+
+        gopls.enable = true;
+        marksman.enable = true;
+        nil-ls.enable = true;
+
+        lua-ls = {
+          enable = true;
+          settings.diagnostic.globals = [ "vim" ];
+        };
+
+      };
     };
   };
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>l";
+      action = "<Nop>";
+      options = {
+        desc = "+LSP";
+        silent = true;
+      };
+    }
+  ];
 
 }
