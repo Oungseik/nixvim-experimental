@@ -6,7 +6,7 @@
     beacon.enable = true;
 
     ui = {
-      border = "single"; # One of none, single, double, rounded, solid, shadow
+      border = "rounded"; # One of none, single, double, rounded, solid, shadow
       codeAction = "💡"; # Can be any symbol you want 💡
     };
 
@@ -82,20 +82,10 @@
   };
 
   keymaps = [
-    {
-      mode = "n";
-      key = "<leader>ls";
-      action = "<Nop>";
-      options = {
-        desc = "+LSPsaga";
-        silent = true;
-      };
-    }
-
     # check out https://nvimdev.github.io/lspsaga/callhierarchy/
     {
       mode = "n";
-      key = "<leader>lso";
+      key = "<leader>l>";
       action = "<cmd>Lspsaga outgoing_calls<CR>";
       options = {
         desc = "Outgoing Calls";
@@ -104,13 +94,120 @@
     }
     {
       mode = "n";
-      key = "<leader>lsi";
+      key = "<leader>l<";
       action = "<cmd>Lspsaga incoming_calls<CR>";
       options = {
         desc = "Incoming Calls";
         silent = true;
       };
     }
-
+    {
+      mode = "n";
+      key = "<leader>lR";
+      action = "<cmd>Lspsaga finder ref<CR>";
+      options = {
+        desc = "Find References";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>ld";
+      action = "<cmd>Lspsaga finder def<CR>";
+      options = {
+        desc = "Find Definition";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>li";
+      action = "<cmd>Lspsaga finder imp<CR>";
+      options = {
+        desc = "Find Implementation";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>lt";
+      action = "<cmd>Lspsaga peek_type_definition<CR>";
+      options = {
+        desc = "Find Type Definition";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "K";
+      action = "<cmd>Lspsaga hover_doc<CR>";
+      options = {
+        desc = "Hover";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>lo";
+      action = "<cmd>Lspsaga outline<CR>";
+      options = {
+        desc = "Outline";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>lr";
+      action = "<cmd>Lspsaga rename<CR>";
+      options = {
+        desc = "Rename";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>la";
+      action = "<cmd>Lspsaga code_action<CR>";
+      options = {
+        desc = "Code Action";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>ld";
+      action = "<cmd>Lspsaga show_line_diagnostics<CR>";
+      options = {
+        desc = "Line Diagnostics";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>l[";
+      action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
+      options = {
+        desc = "Next Diagnostic";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>l]";
+      action = "<cmd>Lspsaga diagnostic_jump_prev<CR>";
+      options = {
+        desc = "Previous Diagnostic";
+        silent = true;
+      };
+    }
+    {
+      mode = [ "n" "t" ];
+      key = "<A-3>";
+      action = "<cmd>Lspsaga term_toggle<CR>";
+      options = {
+        desc = "Toggle Term";
+        silent = true;
+      };
+    }
   ];
 }
