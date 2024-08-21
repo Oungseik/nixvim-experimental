@@ -24,11 +24,11 @@
       javascriptreact = (helpers.listToUnkeyedAttrs [ "prettierd" "prettier" "biome" ]) // { stopAfterFirst = true; };
       typescriptreact = (helpers.listToUnkeyedAttrs [ "prettierd" "prettier" "biome" ]) // { stopAfterFirst = true; };
 
-      nix = [ "nixfmt" ];
-      rust = [ "rustfmt" ];
-      lua = [ "stylua" ];
-      python = [ "black" ];
       go = [ "gofmt" ];
+      lua = [ "stylua" ];
+      nix = [ "nixfmt" ];
+      python = [ "black" ];
+      rust = [ "rustfmt" ];
     };
 
     formatOnSave = {
