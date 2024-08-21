@@ -201,6 +201,15 @@
       };
     }
     {
+      mode = [ "n" "v" ];
+      key = "<leader>lq";
+      action = ":lua vim.diagnostic.setloclist()<cr>";
+      options = {
+        silent = true;
+        desc = "Quickfix";
+      };
+    }
+    {
       mode = [ "n" "t" ];
       key = "<A-3>";
       action = "<cmd>Lspsaga term_toggle<CR>";
