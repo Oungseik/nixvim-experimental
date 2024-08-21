@@ -16,7 +16,7 @@
       key = "<leader>w";
       options.silent = true;
       options.desc = "Save";
-      action = "<cmd>noa w<CR>";
+      action = "<cmd>w<CR>";
     }
     {
       mode = "n";

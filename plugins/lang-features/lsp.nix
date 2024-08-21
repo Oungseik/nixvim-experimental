@@ -30,6 +30,20 @@
         };
 
       };
+
+      keymaps = {
+        silent = true;
+        lspBuf = {
+          gd = {
+            action = "definition";
+            desc = "Goto Definition";
+          };
+          "<leader>lS" = {
+            action = "workspace_symbol";
+            desc = "Workspace Symbol";
+          };
+        };
+      };
     };
   };
 
