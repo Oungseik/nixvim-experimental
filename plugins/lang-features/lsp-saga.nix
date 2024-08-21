@@ -1,4 +1,3 @@
-{ ... }:
 {
   plugins.lspsaga = {
     enable = true;
