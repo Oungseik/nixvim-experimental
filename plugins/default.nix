@@ -3,5 +3,6 @@
     ./editor
     ./lang-features
     ./ui
+    ./utils
   ];
 }

@@ -4,8 +4,6 @@
     settings.flavour = "macchiato";
   };
 
-  plugins.tmux-navigator.enable = true;
-
   extraConfigLua = ''
     -- auto-reload files when modified externally
     -- https://unix.stackexchange.com/a/383044
