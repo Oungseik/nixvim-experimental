@@ -9,5 +9,6 @@
   imports = [
     ./flash.nix
     ./hardtime.nix
+    ./rest.nix
   ];
 }
