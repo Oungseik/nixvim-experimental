@@ -44,4 +44,9 @@
     smartindent = true;
     breakindent = true;
   };
+
+  filetype.extension = {
+    http = "http";
+  };
+
 }
