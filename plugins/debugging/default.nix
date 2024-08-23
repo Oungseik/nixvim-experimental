@@ -1,3 +1,1 @@
-{
-  imports = [ ./dap.nix ];
-}
+{ imports = [ ./dap.nix ]; }

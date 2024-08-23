@@ -1,4 +1,5 @@
-{ ... }: {
+{ ... }:
+{
   # TODO - add keybindings and support rust
   plugins.dap = {
     enable = true;
@@ -22,14 +23,16 @@
       dap-ui = {
         enable = true;
         floating.mappings = {
-          close = [ "<ESC>" "q" ];
+          close = [
+            "<ESC>"
+            "q"
+          ];
         };
       };
       dap-virtual-text = {
         enable = true;
       };
     };
-
     configurations = { };
   };
 
