@@ -26,6 +26,7 @@
         # jsonls.enable = true;
         marksman.enable = true;
         nil-ls.enable = true;
+        pyright.enable = true;
         svelte.enable = true;
         tsserver.enable = true;
 

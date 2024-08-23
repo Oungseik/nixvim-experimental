@@ -1,6 +1,6 @@
 {
   plugins.hardtime = {
-    enable = true;
+    enable = false;
     enabled = false;
     disableMouse = true;
     disabledFiletypes = [
