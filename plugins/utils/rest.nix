@@ -19,4 +19,16 @@
       skip_ssl_verification = true;
     };
   };
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "<Leader>r";
+      action = "<Nop>";
+      options = {
+        silent = true;
+        desc = "+REST";
+      };
+    }
+  ];
 }
