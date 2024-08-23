@@ -27,6 +27,7 @@
         marksman.enable = true;
         nil-ls.enable = true;
         svelte.enable = true;
+        tsserver.enable = true;
 
         lua-ls = {
           enable = true;
