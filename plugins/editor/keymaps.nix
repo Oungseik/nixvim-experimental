@@ -54,12 +54,23 @@
       mode = "n";
       key = "<Leader>p";
       action = "<Nop>";
-      options = { silent = true; desc = "+Plugins More"; };
+      options = {
+        silent = true;
+        desc = "+Plugins More";
+      };
     }
 
     # swapping lines
-    { mode = "n"; key = "<A-j>"; action = ":m .+1<CR>=="; }
-    { mode = "n"; key = "<A-k>"; action = ":m .-2<CR>=="; }
+    {
+      mode = "n";
+      key = "<A-j>";
+      action = ":m .+1<CR>==";
+    }
+    {
+      mode = "n";
+      key = "<A-k>";
+      action = ":m .-2<CR>==";
+    }
 
     # insert mode bindings
     {
@@ -71,11 +82,27 @@
 
     # visual mode bindings
     # select lines and indent
-    { mode = "v"; key = ">"; action = ">gv"; }
-    { mode = "v"; key = "<"; action = "<gv"; }
+    {
+      mode = "v";
+      key = ">";
+      action = ">gv";
+    }
+    {
+      mode = "v";
+      key = "<";
+      action = "<gv";
+    }
 
     # select lines and swap
-    { mode = "v"; key = "<A-j>"; action = ":m '>+1<CR>gv=gv"; }
-    { mode = "v"; key = "<A-k>"; action = ":m '<-2<CR>gv=gv"; }
+    {
+      mode = "v";
+      key = "<A-j>";
+      action = ":m '>+1<CR>gv=gv";
+    }
+    {
+      mode = "v";
+      key = "<A-k>";
+      action = ":m '<-2<CR>gv=gv";
+    }
   ];
 }

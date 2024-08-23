@@ -16,11 +16,18 @@
     renderer = {
       highlightGit = true;
       highlightOpenedFiles = "none";
-      indentMarkers = { enable = true; };
+      indentMarkers = {
+        enable = true;
+      };
 
       icons = {
         gitPlacement = "after";
-        show = { file = true; folder = true; folderArrow = true; git = false; };
+        show = {
+          file = true;
+          folder = true;
+          folderArrow = true;
+          git = false;
+        };
 
         glyphs = {
           # git = {
