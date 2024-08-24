@@ -16,6 +16,7 @@
       typescriptreact = [ "biomejs" ];
       json = [ "jsonlint" ];
       go = [ "golangcilint" ];
+      # rust = [ "clippy" ]; # no need to enable this, rustaceanvim already have
     };
   };
 }
