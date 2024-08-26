@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   # TODO - add keybindings and support rust
   plugins.dap = {
@@ -6,11 +6,11 @@
 
     signs = {
       dapBreakpoint = {
-        text = "";
+        text = "";
         texthl = "DapBreakpoint";
       };
       dapBreakpointCondition = {
-        text = "";
+        text = "";
         texthl = "DapBreakpointCondition";
       };
       dapLogPoint = {
@@ -22,21 +22,25 @@
     extensions = {
       dap-ui = {
         enable = true;
-        floating.mappings = {
-          close = [
-            "<ESC>"
-            "q"
-          ];
-        };
       };
       dap-virtual-text = {
         enable = true;
       };
     };
-    configurations = { };
+
+    adapters.servers."pwa-node" = import ./servers/pwa-node.nix;
   };
 
   keymaps = [
+    {
+      mode = "n";
+      key = "<leader>d";
+      action = "<Nop>";
+      options = {
+        silent = true;
+        desc = "Debugger";
+      };
+    }
     {
       mode = "n";
       key = "<leader>dB";
