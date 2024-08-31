@@ -56,9 +56,9 @@
             action = "definition";
             desc = "Goto Definition";
           };
-          "<leader>lS" = {
-            action = "workspace_symbol";
-            desc = "Workspace Symbol";
+          "<leader>lr" = {
+            action = "rename";
+            desc = "Rename";
           };
         };
       };
