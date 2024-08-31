@@ -28,7 +28,19 @@
         nil-ls.enable = true;
         pyright.enable = true;
         svelte.enable = true;
-        tsserver.enable = true;
+
+        denols = {
+          enable = true;
+          rootDir.__raw = ''require("lspconfig").util.root_pattern("deno.json", "deno.jsonc")'';
+        };
+
+        tsserver = {
+          enable = true;
+          rootDir.__raw = ''require("lspconfig").util.root_pattern("package.json")'';
+          extraOptions = {
+            single_file_support = false;
+          };
+        };
 
         lua-ls = {
           enable = true;
