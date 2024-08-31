@@ -1,4 +1,4 @@
-{ pkgs, helpers, ... }:
+{ pkgs, ... }:
 {
   plugins.conform-nvim = {
     enable = true;
@@ -18,57 +18,44 @@
         nixfmt = {
           command = "${pkgs.nixfmt-rfc-style}/bin/nixfmt";
         };
-        biome = {
-          command = "${pkgs.biome}/bin/biome";
-          args = [
-            "--trailing-comma=es5"
-            "--semicolons=always"
-            "--javascript-formatter-enabled=true"
-            "--javascript-formatter-indent-style=space"
-          ];
-        };
         black = {
           command = "${pkgs.black}/bin/black";
         };
       };
 
       formatters_by_ft = {
-        javascript =
-          (helpers.listToUnkeyedAttrs [
-            "prettierd"
-            "prettier"
-            "biome"
-          ])
-          // {
-            stopAfterFirst = true;
-          };
-        typescript =
-          (helpers.listToUnkeyedAttrs [
-            "prettierd"
-            "prettier"
-            "biome"
-          ])
-          // {
-            stopAfterFirst = true;
-          };
-        javascriptreact =
-          (helpers.listToUnkeyedAttrs [
-            "prettierd"
-            "prettier"
-            "biome"
-          ])
-          // {
-            stopAfterFirst = true;
-          };
-        typescriptreact =
-          (helpers.listToUnkeyedAttrs [
-            "prettierd"
-            "prettier"
-            "biome"
-          ])
-          // {
-            stopAfterFirst = true;
-          };
+        javascript = {
+          __unkeyed-1 = "prettier";
+          __unkeyed-2 = "deno_fmt";
+          timeout_ms = 2000;
+          stop_after_first = true;
+        };
+        typescript = {
+          __unkeyed-1 = "prettier";
+          __unkeyed-2 = "deno_fmt";
+          timeout_ms = 2000;
+          stop_after_first = true;
+        };
+        javascriptreact = {
+          __unkeyed-1 = "prettier";
+          __unkeyed-2 = "deno_fmt";
+          timeout_ms = 2000;
+          stop_after_first = true;
+        };
+
+        typescriptreact = {
+          __unkeyed-1 = "prettier";
+          __unkeyed-2 = "deno_fmt";
+          timeout_ms = 2000;
+          stop_after_first = true;
+        };
+
+        json = {
+          __unkeyed-1 = "prettier";
+          __unkeyed-2 = "deno_fmt";
+          timeout_ms = 2000;
+          stop_after_first = true;
+        };
 
         go = [ "gofmt" ];
         lua = [ "stylua" ];
