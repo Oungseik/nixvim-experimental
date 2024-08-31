@@ -23,7 +23,7 @@
         clangd.enable = true;
         # cssls.enable = true;
         gopls.enable = true;
-        # jsonls.enable = true;
+        jsonls.enable = true;
         marksman.enable = true;
         nil-ls.enable = true;
         pyright.enable = true;
