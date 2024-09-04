@@ -10,5 +10,6 @@
     ./flash.nix
     ./hardtime.nix
     ./rest.nix
+    ./toggleterm.nix
   ];
 }

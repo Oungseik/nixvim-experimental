@@ -211,17 +211,17 @@
         desc = "Quickfix";
       };
     }
-    {
-      mode = [
-        "n"
-        "t"
-      ];
-      key = "<A-3>";
-      action = "<cmd>Lspsaga term_toggle<CR>";
-      options = {
-        desc = "Toggle Term";
-        silent = true;
-      };
-    }
+    # {
+    #   mode = [
+    #     "n"
+    #     "t"
+    #   ];
+    #   key = "<A-3>";
+    #   action = "<cmd>Lspsaga term_toggle<CR>";
+    #   options = {
+    #     desc = "Toggle Term";
+    #     silent = true;
+    #   };
+    # }
   ];
 }
