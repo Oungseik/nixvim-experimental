@@ -22,6 +22,7 @@
 
         clangd.enable = true;
         # cssls.enable = true;
+        elixirls.enable = true;
         gopls.enable = true;
         jsonls.enable = true;
         marksman.enable = true;
