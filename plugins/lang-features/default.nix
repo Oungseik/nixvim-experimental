@@ -5,7 +5,7 @@
     ./lsp-saga.nix
     ./nvim-lint.nix
 
-    ./markdown/markview.nix
+    ./markdown
     ./rust/rustaceanvim.nix
   ];
 }

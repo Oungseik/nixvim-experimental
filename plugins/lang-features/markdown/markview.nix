@@ -1,5 +1,4 @@
 {
-  plugins.markview.enable = true;
 
   keymaps = [
     {
