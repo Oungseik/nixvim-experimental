@@ -1,11 +1,7 @@
 {
   plugins = {
-    cmp-nvim-lsp = {
-      enable = true;
-    }; # lsp
-    cmp-async-path = {
-      enable = true;
-    }; # file system paths
+    cmp-nvim-lsp.enable = true; # lsp
+    cmp-async-path.enable = true; # file system paths
     # cmp-buffer = { enable = false; };
     # cmp-emoji = { enable = false; };
     # cmp-cmdline = { enable = false; }; # autocomplete for cmdline
@@ -67,7 +63,6 @@
         };
 
         mapping = {
-          # "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
           "<C-n>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
           "<C-p>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
           "<C-j>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
@@ -77,7 +72,7 @@
           "<C-f>" = "cmp.mapping.scroll_docs(2)";
           "<C-Space>" = "cmp.mapping.complete()";
           "<CR>" = "cmp.mapping.confirm({ select = true })";
-          "<S-CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
+          # "<S-CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
         };
       };
     };

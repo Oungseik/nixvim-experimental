@@ -35,7 +35,7 @@
           rootDir.__raw = ''require("lspconfig").util.root_pattern("deno.json", "deno.jsonc")'';
         };
 
-        tsserver = {
+        ts-ls = {
           enable = true;
           rootDir.__raw = ''require("lspconfig").util.root_pattern("package.json")'';
           extraOptions = {

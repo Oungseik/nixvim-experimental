@@ -1,5 +1,5 @@
 {
   imports = [
-    # ./web-devicons.nix
+    ./web-devicons.nix
   ];
 }
