@@ -12,6 +12,12 @@
       command = "if mode() != 'c' | checktime | endif",
       pattern = { "*" },
     })
+    vim.api.nvim_create_autocmd("FileType", {
+      pattern = "json",
+      callback = function()
+        vim.bo.formatexpr = "v:lua.require'conform'.formatexpr()"
+      end,
+    })
   '';
 
   clipboard = {
@@ -22,7 +28,7 @@
 
   opts = {
     number = true;
-    relativenumber = false;
+    relativenumber = true;
     termguicolors = true;
     showmode = false;
     splitbelow = true;

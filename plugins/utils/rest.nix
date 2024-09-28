@@ -1,23 +1,6 @@
 {
   plugins.rest = {
     enable = true;
-    settings = {
-      keybinds = [
-        [
-          "<leader>rr"
-          "<cmd>Rest run<cr>"
-          "Run req under cursor"
-        ]
-        [
-          "<leader>rl"
-          "<cmd>Rest run<cr>"
-          "Re-run last req"
-        ]
-      ];
-
-      env_file = ".rest.env";
-      skip_ssl_verification = true;
-    };
   };
 
   keymaps = [
@@ -28,6 +11,24 @@
       options = {
         silent = true;
         desc = "+REST";
+      };
+    }
+    {
+      mode = "n";
+      key = "<Leader>rr";
+      action = "<cmd>Rest run<cr>";
+      options = {
+        silent = true;
+        desc = "Run Req Under Cursor";
+      };
+    }
+    {
+      mode = "n";
+      key = "<Leader>re";
+      action = "<cmd>Rest env set .env<cr>";
+      options = {
+        silent = true;
+        desc = "Set .env";
       };
     }
   ];
