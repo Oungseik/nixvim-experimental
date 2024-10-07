@@ -29,6 +29,12 @@
 
             procMacro = {
               enable = true;
+              ignored = {
+                leptos_macro = [
+                  "component"
+                  "server"
+                ];
+              };
             };
           };
         };
