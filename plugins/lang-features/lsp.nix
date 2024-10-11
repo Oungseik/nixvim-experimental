@@ -24,9 +24,10 @@
         # cssls.enable = true;
         elixirls.enable = true;
         gopls.enable = true;
+        gleam.enable = true;
         jsonls.enable = true;
         marksman.enable = true;
-        nil-ls.enable = true;
+        nil_ls.enable = true;
         pyright.enable = true;
         svelte.enable = true;
 
@@ -35,7 +36,7 @@
           rootDir.__raw = ''require("lspconfig").util.root_pattern("deno.json", "deno.jsonc")'';
         };
 
-        ts-ls = {
+        ts_ls = {
           enable = true;
           rootDir.__raw = ''require("lspconfig").util.root_pattern("package.json")'';
           extraOptions = {
@@ -43,7 +44,7 @@
           };
         };
 
-        lua-ls = {
+        lua_ls = {
           enable = true;
           settings.diagnostic.globals = [ "vim" ];
         };
