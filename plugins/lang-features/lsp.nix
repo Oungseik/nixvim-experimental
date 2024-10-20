@@ -25,6 +25,7 @@
         elixirls.enable = true;
         gopls.enable = true;
         gleam.enable = true;
+        hls.enable = true;
         jsonls.enable = true;
         marksman.enable = true;
         nil_ls.enable = true;
