@@ -25,7 +25,10 @@
         elixirls.enable = true;
         gopls.enable = true;
         gleam.enable = true;
-        hls.enable = true;
+        hls = {
+          enable = true;
+          installGhc = false;
+        };
         jsonls.enable = true;
         marksman.enable = true;
         nil_ls.enable = true;
