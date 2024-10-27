@@ -23,6 +23,7 @@
         clangd.enable = true;
         # cssls.enable = true;
         elixirls.enable = true;
+        elmls.enable = true;
         gopls.enable = true;
         gleam.enable = true;
         hls = {
@@ -34,6 +35,10 @@
         nil_ls.enable = true;
         pyright.enable = true;
         svelte.enable = true;
+
+        # html.enable = true;
+        # cssls.enable = true;
+        emmet_ls.enable = true;
 
         denols = {
           enable = true;
