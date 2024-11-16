@@ -28,7 +28,7 @@
         gleam.enable = true;
         hls = {
           enable = true;
-          installGhc = false;
+          installGhc = true;
         };
         jsonls.enable = true;
         marksman.enable = true;
