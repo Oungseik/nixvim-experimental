@@ -8,6 +8,7 @@
 
   imports = [
     ./flash.nix
+    ./oil.nix
     ./rest.nix
     ./toggleterm.nix
   ];
