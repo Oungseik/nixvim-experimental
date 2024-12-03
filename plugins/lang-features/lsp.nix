@@ -38,7 +38,7 @@
 
         # html.enable = true;
         # cssls.enable = true;
-        emmet_ls.enable = true;
+        # emmet_ls.enable = true;
 
         denols = {
           enable = true;
