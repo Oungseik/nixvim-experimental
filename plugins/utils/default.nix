@@ -7,9 +7,10 @@
   };
 
   imports = [
+    ./extra.nix
     ./flash.nix
     ./oil.nix
-    ./rest.nix
+    # ./rest.nix
     ./toggleterm.nix
   ];
 }

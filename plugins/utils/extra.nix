@@ -46,14 +46,23 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>ra";
+      key = "<Leader>r";
+      action = "<Nop>";
+      options = {
+        silent = true;
+        desc = "+REST";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>rr";
       options.silent = true;
       options.desc = "Run Hurl";
       action = "<cmd>HurlRunnerAt<CR>";
     }
     {
       mode = "n";
-      key = "<leader>rA";
+      key = "<leader>ra";
       options.silent = true;
       options.desc = "Run Hurl File";
       action = "<cmd>HurlRunner<CR>";
