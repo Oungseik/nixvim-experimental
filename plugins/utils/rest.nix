@@ -24,11 +24,11 @@
     }
     {
       mode = "n";
-      key = "<Leader>re";
+      key = "<Leader>rs";
       action = "<cmd>Rest env set .env<cr>";
       options = {
         silent = true;
-        desc = "Set .env";
+        desc = "Set .env for REST.nvim";
       };
     }
   ];

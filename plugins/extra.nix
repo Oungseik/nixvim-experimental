@@ -42,4 +42,42 @@
       }
     })
   '';
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>ra";
+      options.silent = true;
+      options.desc = "Run Hurl";
+      action = "<cmd>HurlRunnerAt<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>rA";
+      options.silent = true;
+      options.desc = "Run Hurl File";
+      action = "<cmd>HurlRunner<CR>";
+    }
+    {
+      mode = "v";
+      key = "<leader>rr";
+      options.silent = true;
+      options.desc = "Run Hurl";
+      action = "<cmd>HurlRun<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>rt";
+      options.silent = true;
+      options.desc = "Run Hurl File";
+      action = "<cmd>HurlRunnerToEntry<CR>";
+    }
+    {
+      mode = "n";
+      key = "<leader>re";
+      options.silent = true;
+      options.desc = "Run Hurl File";
+      action = "<cmd>HurlRunnerToEnd<CR>";
+    }
+  ];
 }
