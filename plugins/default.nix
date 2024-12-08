@@ -7,5 +7,7 @@
     ./snippets
     ./ui
     ./utils
+
+    ./extra.nix
   ];
 }
