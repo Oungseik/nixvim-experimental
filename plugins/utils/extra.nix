@@ -36,6 +36,7 @@
 
     require("hurl").setup({
       split_size = '50%',
+      auto_close = true,
       env_file = {
         ".env",
         "hurl.env"
@@ -72,7 +73,7 @@
       key = "<leader>rr";
       options.silent = true;
       options.desc = "Run Hurl";
-      action = "<cmd>HurlRun<CR>";
+      action = ":HurlRunner<CR>";
     }
     {
       mode = "n";
