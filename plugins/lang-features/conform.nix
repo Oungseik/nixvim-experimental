@@ -4,11 +4,11 @@
     enable = true;
 
     settings = {
-      format_on_save = {
-        timeoutMs = 500;
-        lspFallback = true;
+      # format_on_save = {
+      #   timeoutMs = 500;
+      #   lspFallback = true;
+      # };
 
-      };
       notify_on_error = true;
 
       formatters = {
