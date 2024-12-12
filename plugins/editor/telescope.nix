@@ -31,7 +31,10 @@
       mode = "n";
       key = "<Leader>s";
       action = "<Nop>";
-      options = { silent = true; desc = "+Search"; };
+      options = {
+        silent = true;
+        desc = "+Search";
+      };
     }
     {
       mode = "n";
@@ -47,6 +50,15 @@
       options.desc = "Search File";
       action = "<cmd>Telescope find_files<CR>";
     }
+
+    {
+      mode = "n";
+      key = "<leader>sb";
+      options.silent = true;
+      options.desc = "Find buffers";
+      action = "<cmd>Telescope buffers<CR>";
+    }
+
     {
       mode = "n";
       key = "<leader>st";
