@@ -7,6 +7,15 @@
 
     settings = {
       provider = "copilot";
+
+      hints = {
+        enable = false;
+      };
+
+      behaviour = {
+        auto_suggestions = false;
+      };
+
     };
   };
 
