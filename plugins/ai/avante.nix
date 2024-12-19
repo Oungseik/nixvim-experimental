@@ -9,4 +9,16 @@
       provider = "copilot";
     };
   };
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "<Leader>a";
+      action = "<Nop>";
+      options = {
+        silent = true;
+        desc = "+AI";
+      };
+    }
+  ];
 }
