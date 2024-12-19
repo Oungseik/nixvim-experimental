@@ -35,6 +35,7 @@
         nil_ls.enable = true;
         pyright.enable = true;
         svelte.enable = true;
+        taplo.enable = true;
 
         # html.enable = true;
         # cssls.enable = true;
