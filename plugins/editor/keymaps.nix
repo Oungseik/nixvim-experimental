@@ -22,8 +22,8 @@
       mode = "n";
       key = "<leader>h";
       options.silent = true;
-      options.desc = "No Highlight";
-      action = "<cmd>nohlsearch<CR>";
+      options.desc = "Toggle Highlight";
+      action = "<cmd>set invhlsearch<CR>";
     }
     {
       mode = "n";
