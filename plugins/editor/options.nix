@@ -1,4 +1,5 @@
 {
+  withNodeJs = true;
   colorschemes.catppuccin = {
     enable = true;
     settings.flavour = "macchiato";

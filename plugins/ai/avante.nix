@@ -1,6 +1,10 @@
+{ pkgs, ... }:
 {
   plugins.dressing.enable = true;
-  plugins.copilot-lua.enable = true;
+  plugins.copilot-lua = {
+    enable = true;
+    copilotNodeCommand = "${pkgs.nodejs_22}/bin/node";
+  };
 
   plugins.avante = {
     enable = true;

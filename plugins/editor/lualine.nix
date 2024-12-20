@@ -50,7 +50,7 @@
           }
         ];
 
-        # right 
+        # right
         lualine_x = [
           {
             __unkeyed-1 = "diagnostics";
@@ -75,6 +75,7 @@
                local ok, clients = pcall(vim.lsp.get_clients, { name = "copilot", bufnr = 0 })
                return ok and #clients > 0
               end,
+              color = { fg = "#a6da95" },
             '';
           }
         ];
