@@ -19,8 +19,8 @@
       src = pkgs.fetchFromGitHub {
         owner = "jellydn";
         repo = "hurl.nvim";
-        rev = "bc8d748a3754f63d50ee8dfd54e20de80f22754c";
-        hash = "sha256-SU8TAZmoES06VU2ftYjXRg07tRfP5VyacLaRN1CCLRA=";
+        rev = "438360f62e73e8d149f0374d9d1d75c1441807e3";
+        hash = "sha256-4pVO/WzjucHGTDPUCqHW9SRnQwZoYeGtpsO4fp+aJ04=";
       };
     })
 
