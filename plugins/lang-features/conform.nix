@@ -25,34 +25,39 @@
 
       formatters_by_ft = {
         javascript = {
-          __unkeyed-1 = "prettier";
-          __unkeyed-2 = "deno_fmt";
+          __unkeyed-1 = "biome";
+          __unkeyed-2 = "prettier";
+          __unkeyed-3 = "deno_fmt";
           timeout_ms = 2000;
           stop_after_first = true;
         };
         typescript = {
-          __unkeyed-1 = "prettier";
-          __unkeyed-2 = "deno_fmt";
+          __unkeyed-1 = "biome";
+          __unkeyed-2 = "prettier";
+          __unkeyed-3 = "deno_fmt";
           timeout_ms = 2000;
           stop_after_first = true;
         };
         javascriptreact = {
-          __unkeyed-1 = "prettier";
-          __unkeyed-2 = "deno_fmt";
+          __unkeyed-1 = "biome";
+          __unkeyed-2 = "prettier";
+          __unkeyed-3 = "deno_fmt";
           timeout_ms = 2000;
           stop_after_first = true;
         };
 
         typescriptreact = {
-          __unkeyed-1 = "prettier";
-          __unkeyed-2 = "deno_fmt";
+          __unkeyed-1 = "biome";
+          __unkeyed-2 = "prettier";
+          __unkeyed-3 = "deno_fmt";
           timeout_ms = 2000;
           stop_after_first = true;
         };
 
         json = {
-          __unkeyed-1 = "prettier";
-          __unkeyed-2 = "deno_fmt";
+          __unkeyed-1 = "biome";
+          __unkeyed-2 = "prettier";
+          __unkeyed-3 = "deno_fmt";
           timeout_ms = 2000;
           stop_after_first = true;
         };
