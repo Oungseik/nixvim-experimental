@@ -9,6 +9,7 @@
   imports = [
     ./extra.nix
     ./flash.nix
+    ./harpoon.nix
     ./oil.nix
     # ./rest.nix
     ./toggleterm.nix
