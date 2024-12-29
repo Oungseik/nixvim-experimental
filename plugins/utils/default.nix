@@ -10,6 +10,7 @@
     ./extra.nix
     ./flash.nix
     ./harpoon.nix
+    ./mini.nix
     ./oil.nix
     # ./rest.nix
     ./toggleterm.nix
