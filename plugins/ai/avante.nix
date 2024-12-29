@@ -20,6 +20,10 @@
         auto_suggestions = false;
       };
 
+      windows = {
+        width = 40;
+      };
+
     };
   };
 
