@@ -10,10 +10,10 @@
     };
 
     lintersByFt = {
-      javascript = [ "biomejs" ];
-      typescript = [ "biomejs" ];
-      javascriptreact = [ "biomejs" ];
-      typescriptreact = [ "biomejs" ];
+      # javascript = [ "biomejs" ];
+      # typescript = [ "biomejs" ];
+      # javascriptreact = [ "biomejs" ];
+      # typescriptreact = [ "biomejs" ];
       go = [ "golangcilint" ];
       # rust = [ "clippy" ]; # no need to enable this, rustaceanvim already have
     };
