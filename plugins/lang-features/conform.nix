@@ -2,6 +2,12 @@
 {
   plugins.conform-nvim = {
     enable = true;
+    lazyLoad = {
+      enable = true;
+      settings = {
+        event = ["InsertEnter"];
+      };
+    };
 
     settings = {
       # format_on_save = {

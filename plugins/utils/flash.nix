@@ -4,6 +4,13 @@
 
     lazyLoad = {
       enable = true;
+      settings = {
+        keys = [
+          {
+            __unkeyed-1 = "s";
+          }
+        ];
+      };
     };
 
     settings = {

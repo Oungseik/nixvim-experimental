@@ -1,6 +1,15 @@
 {
   plugins.rustaceanvim = {
     enable = true;
+    lazyLoad = {
+      enable = true;
+      settings = {
+        ft = [
+          "rust"
+          "toml"
+        ];
+      };
+    };
 
     rustAnalyzerPackage = null;
     settings = {
