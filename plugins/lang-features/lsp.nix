@@ -12,7 +12,19 @@
 
   plugins = {
     lsp-lines.enable = true;
-    lsp-format.enable = true;
+    lsp-format = {
+      enable = true;
+      lspServersToEnable = [
+        "clangd"
+        "elixirls"
+        "gleam"
+        "gopls"
+        "lua_ls"
+        "marksman"
+        "nil_ls"
+        "taplo"
+      ];
+    };
     lspkind.enable = true;
 
     lsp = {
@@ -28,7 +40,7 @@
         gleam.enable = true;
         hls = {
           enable = true;
-          installGhc = true;
+          installGhc = false;
         };
         jsonls.enable = true;
         marksman.enable = true;
@@ -36,10 +48,7 @@
         pyright.enable = true;
         svelte.enable = true;
         taplo.enable = true;
-
-        # html.enable = true;
-        # cssls.enable = true;
-        # emmet_ls.enable = true;
+        cssls.enable = true;
 
         denols = {
           enable = true;
