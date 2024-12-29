@@ -3,9 +3,10 @@
 
   extraConfigLua = ''
     require("mini.align").setup()
-    require('mini.bufremove').setup()
-    require("mini.icons").setup()
+    -- require('mini.bufremove').setup()
     require("mini.git").setup()
+    require("mini.icons").setup()
+    require("mini.pairs").setup()
   '';
 
   keymaps = [

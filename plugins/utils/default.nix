@@ -1,6 +1,6 @@
 {
   plugins = {
-    nvim-autopairs.enable = true;
+    # nvim-autopairs.enable = false; # use mini.pair instead.
     # nvim-colorizer.enable = false;
     tmux-navigator.enable = true;
     which-key.enable = true;
