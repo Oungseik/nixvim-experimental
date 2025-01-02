@@ -25,7 +25,7 @@
     };
 
     settings = {
-      provider = "copilot";
+      provider = "copilot.lua";
 
       hints = {
         enable = false;

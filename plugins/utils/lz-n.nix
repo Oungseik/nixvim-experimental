@@ -10,12 +10,6 @@
       {
         __unkeyed-1 = "hurl.nvim";
         ft = "hurl";
-        cmd = [
-          "HurlRunner"
-          "HurlRunnerAt"
-          "HurlRunnerToEnd"
-          "HurlRunnerToEntry"
-        ];
       }
     ];
   };
