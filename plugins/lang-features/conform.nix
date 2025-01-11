@@ -68,6 +68,14 @@
           stop_after_first = true;
         };
 
+        astro = {
+          __unkeyed-1 = "biome";
+          __unkeyed-2 = "prettier";
+          __unkeyed-3 = "deno_fmt";
+          timeout_ms = 2000;
+          stop_after_first = true;
+        };
+
         go = [ "gofmt" ];
         lua = [ "stylua" ];
         nix = [ "nixfmt" ];
