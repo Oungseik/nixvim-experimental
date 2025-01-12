@@ -15,7 +15,7 @@
 
     (buildVimPlugin {
       pname = "hurl.nvim";
-      version = "v2.0.0";
+      version = "v2.0.1";
       src = pkgs.fetchFromGitHub {
         owner = "jellydn";
         repo = "hurl.nvim";
@@ -53,6 +53,13 @@
         silent = true;
         desc = "+REST";
       };
+    }
+    {
+      mode = "n";
+      key = "<leader>rs";
+      options.silent = true;
+      options.desc = "Show Last Hurl";
+      action = "<cmd>HurlShowLastResponse<CR>";
     }
     {
       mode = "n";
