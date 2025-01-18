@@ -36,7 +36,7 @@
 
     require("hurl").setup({
       split_size = '50%',
-      auto_close = true,
+      auto_close = false,
       env_file = {
         ".env",
         "hurl.env"

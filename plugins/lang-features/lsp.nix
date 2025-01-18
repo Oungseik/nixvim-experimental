@@ -33,7 +33,6 @@
       servers = {
 
         clangd.enable = true;
-        # cssls.enable = true;
         elixirls.enable = true;
         elmls.enable = true;
         gopls.enable = true;
@@ -49,6 +48,7 @@
         svelte.enable = true;
         taplo.enable = true;
         cssls.enable = true;
+        astro.enable = true;
 
         denols = {
           enable = true;
