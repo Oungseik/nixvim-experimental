@@ -1,7 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, stable, ... }:
 {
-
-  extraPlugins = with pkgs.vimUtils; [
+  extraPlugins = with stable.vimUtils; [
     (buildVimPlugin {
       pname = "indentmini.nvim";
       version = "v0.1";

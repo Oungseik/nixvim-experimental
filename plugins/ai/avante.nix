@@ -11,7 +11,9 @@
   };
   plugins.copilot-lua = {
     enable = true;
-    copilotNodeCommand = "${pkgs.nodejs_22}/bin/node";
+    settings = {
+      copilot_node_command = "${pkgs.nodejs_22}/bin/node";
+    };
   };
 
   plugins.avante = {

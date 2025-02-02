@@ -68,12 +68,5 @@
       options.desc = "Explorer";
       action = "<cmd>NvimTreeToggle<CR>";
     }
-    {
-      mode = "n";
-      key = "<C-e>";
-      options.silent = true;
-      options.desc = "Explorer";
-      action = "<cmd>NvimTreeToggle<CR>";
-    }
   ];
 }
