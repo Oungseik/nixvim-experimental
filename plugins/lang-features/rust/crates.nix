@@ -1,12 +1,12 @@
 {
-  plugins.oil = {
+  plugins.crates = {
     enable = false;
 
     lazyLoad = {
-      enable = true;
       settings = {
-        cmd = "Oil";
+        event = [ "BufRead Cargo.toml" ];
       };
     };
   };
+
 }

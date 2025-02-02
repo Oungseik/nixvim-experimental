@@ -8,6 +8,12 @@
 
     cmp = {
       enable = true;
+      lazyLoad = {
+        enable = true;
+        settings = {
+          event = [ "InsertEnter" ];
+        };
+      };
 
       settings = {
         autoEnableSources = true;

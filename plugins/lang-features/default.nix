@@ -6,6 +6,7 @@
     ./nvim-lint.nix
 
     ./markdown
+    ./rust/crates.nix
     ./rust/rustaceanvim.nix
   ];
 }

@@ -5,6 +5,14 @@
     settings.flavour = "macchiato";
   };
 
+  performance = {
+    byteCompileLua = {
+      enable = true;
+      nvimRuntime = true;
+      plugins = true;
+    };
+  };
+
   extraConfigLua = ''
     -- auto-reload files when modified externally
     -- https://unix.stackexchange.com/a/383044

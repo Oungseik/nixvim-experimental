@@ -1,7 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, stable, ... }:
 {
-
-  extraPlugins = with pkgs.vimUtils; [
+  extraPlugins = with stable.vimUtils; [
     (buildVimPlugin {
       pname = "indentmini.nvim";
       version = "v0.1";
@@ -15,7 +14,7 @@
 
     (buildVimPlugin {
       pname = "hurl.nvim";
-      version = "v2.0.0";
+      version = "v2.0.1";
       src = pkgs.fetchFromGitHub {
         owner = "jellydn";
         repo = "hurl.nvim";
@@ -36,7 +35,7 @@
 
     require("hurl").setup({
       split_size = '50%',
-      auto_close = true,
+      auto_close = false,
       env_file = {
         ".env",
         "hurl.env"
@@ -53,6 +52,13 @@
         silent = true;
         desc = "+REST";
       };
+    }
+    {
+      mode = "n";
+      key = "<leader>rs";
+      options.silent = true;
+      options.desc = "Show Last Hurl";
+      action = "<cmd>HurlShowLastResponse<CR>";
     }
     {
       mode = "n";
