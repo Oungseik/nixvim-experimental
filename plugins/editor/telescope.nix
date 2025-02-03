@@ -2,13 +2,13 @@
   plugins.telescope = {
     enable = true;
 
-    lazyLoad = {
-      enable = true;
-      settings = {
-        cmd = "Telescope";
-      };
-    };
-
+    # lazyLoad = {
+    #   enable = true;
+    #   settings = {
+    #     cmd = "Telescope";
+    #   };
+    # };
+    #
     settings = {
       defaults = {
         file_ignore_patterns = [
