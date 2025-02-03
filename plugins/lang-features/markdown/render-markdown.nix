@@ -6,6 +6,7 @@
       settings = {
         ft = [
           "markdown"
+          "Avante"
         ];
       };
     };

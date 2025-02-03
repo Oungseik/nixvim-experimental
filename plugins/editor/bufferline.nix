@@ -55,13 +55,6 @@
     }
     {
       mode = "n";
-      key = "<leader>c";
-      options.silent = true;
-      options.desc = "Close Buffer";
-      action = "<cmd>bdelete<CR>";
-    }
-    {
-      mode = "n";
       key = "<leader>bl";
       options.silent = true;
       options.desc = "Close all right";
