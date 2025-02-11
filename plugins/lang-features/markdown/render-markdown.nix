@@ -10,5 +10,8 @@
         ];
       };
     };
+    settings = {
+      file_types = ["markdown" "Avante"];
+    };
   };
 }
