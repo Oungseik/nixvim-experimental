@@ -12,6 +12,7 @@
     };
 
     settings = {
+
       completion = {
         accept = {
           auto_brackets = {
@@ -22,7 +23,7 @@
           };
         };
         documentation = {
-          auto_show = false;
+          auto_show = true;
           auto_show_delay_ms = 500;
           treesitter_highlighting = true;
         };
@@ -31,7 +32,16 @@
         };
       };
 
+      cmdline = {
+        completion = {
+          menu = {
+            auto_show = true;
+          };
+        };
+      };
+
       sources = { };
+
       signature = {
         enabled = true;
       };
