@@ -9,7 +9,6 @@
     # ./flash.nix
     ./harpoon.nix
     ./hurl.nix
-    ./lz-n.nix
     ./mini.nix
     ./oil.nix
     ./toggleterm.nix
