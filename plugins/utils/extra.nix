@@ -1,6 +1,6 @@
-{ pkgs, stable, ... }:
+{ pkgs, ... }:
 {
-  extraPlugins = with stable.vimUtils; [
+  extraPlugins = with pkgs.vimUtils; [
     (buildVimPlugin {
       pname = "indentmini.nvim";
       version = "v0.1";
@@ -9,17 +9,6 @@
         repo = "indentmini.nvim";
         rev = "dea29018328ffa397700ddb32d60103364e72f1b";
         hash = "sha256-5le5dIVsSuMkFly8VwvP8RLh3MIlgFqpgX/QtT3AhB8=";
-      };
-    })
-
-    (buildVimPlugin {
-      pname = "hurl.nvim";
-      version = "v2.0.1";
-      src = pkgs.fetchFromGitHub {
-        owner = "jellydn";
-        repo = "hurl.nvim";
-        rev = "438360f62e73e8d149f0374d9d1d75c1441807e3";
-        hash = "sha256-4pVO/WzjucHGTDPUCqHW9SRnQwZoYeGtpsO4fp+aJ04=";
       };
     })
 
@@ -33,14 +22,14 @@
     })
     vim.cmd.highlight("IndentLineCurrent guifg=#b7bdf8")
 
-    require("hurl").setup({
-      split_size = '50%',
-      auto_close = false,
-      env_file = {
-        ".env",
-        "hurl.env"
-      }
-    })
+    -- require("hurl").setup({
+    --   split_size = '50%',
+    --   auto_close = false,
+    --   env_file = {
+    --     ".env",
+    --     "hurl.env"
+    --   }
+    -- })
   '';
 
   keymaps = [
