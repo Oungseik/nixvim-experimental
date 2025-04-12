@@ -7,10 +7,6 @@
         __unkeyed-1 = "crates.nvim";
         ft = "toml";
       }
-      {
-        __unkeyed-1 = "hurl.nvim";
-        ft = "hurl";
-      }
     ];
   };
 }

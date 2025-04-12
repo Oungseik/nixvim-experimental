@@ -3,8 +3,7 @@
     enable = true;
 
     lazyLoad = {
-      # lazy-loading does not work at all
-      enable = false;
+      enable = true;
       settings = {
         ft = [ "hurl" ];
       };
