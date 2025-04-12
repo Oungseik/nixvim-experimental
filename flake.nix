@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nix-stable.url = "github:nixos/nixpkgs/24.05";
     nixvim.url = "github:nix-community/nixvim";
     flake-parts.url = "github:hercules-ci/flake-parts";
     home-manager = {
@@ -17,7 +16,6 @@
       nixvim,
       flake-parts,
       home-manager,
-      nix-stable,
       ...
     }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
@@ -33,11 +31,10 @@
         let
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
-          stable = nix-stable.legacyPackages.${system};
           nixvimModule = {
             inherit pkgs;
             module = import ./plugins;
-            extraSpecialArgs = { inherit stable; };
+            extraSpecialArgs = { };
           };
           nvim = nixvim'.makeNixvimWithModule nixvimModule;
         in

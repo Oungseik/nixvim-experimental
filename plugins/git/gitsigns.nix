@@ -88,7 +88,7 @@
     {
       mode = [ "n" ];
       key = "<leader>gd";
-      action = ":Gitsigns diffthis<cr>";
+      action = ":vertical Gitsigns diffthis<cr>";
       options = { silent = true; desc = "Git Diff"; };
     }
   ];

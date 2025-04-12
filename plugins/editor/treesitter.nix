@@ -1,10 +1,9 @@
-{pkgs, ...}: {
+{
   plugins = {
     treesitter = {
       enable = true;
       nixvimInjections = true;
       folding = false;
-      nodejsPackage = pkgs.nodejs_22; 
       settings = {
         indent.enable = true;
         highlight.enable = true;

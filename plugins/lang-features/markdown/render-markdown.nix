@@ -6,8 +6,12 @@
       settings = {
         ft = [
           "markdown"
+          "Avante"
         ];
       };
+    };
+    settings = {
+      file_types = ["markdown" "Avante"];
     };
   };
 }

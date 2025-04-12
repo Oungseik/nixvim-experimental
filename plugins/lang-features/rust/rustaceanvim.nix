@@ -2,7 +2,6 @@
   plugins.rustaceanvim = {
     enable = true;
 
-    rustAnalyzerPackage = null;
     settings = {
       server = {
         cmd = [
