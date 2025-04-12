@@ -3,7 +3,7 @@
     ./ai
     ./completions
     # ./debugging
-    ./dependencies.nix
+    ./dependencies
     ./editor
     ./git
     ./lang-features
