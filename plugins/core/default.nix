@@ -1,5 +1,8 @@
 {
-  imports = [ ./blink-cmp.nix ];
+  imports = [
+    ./blink-cmp.nix
+    ./keymaps.nix
+  ];
 
   plugins = {
     lz-n.enable = true;
