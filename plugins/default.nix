@@ -2,7 +2,7 @@
   imports = [
     ./ai
     ./core
-    # ./debugging
+    ./debugging
     ./dependencies
     ./editor
     ./git
