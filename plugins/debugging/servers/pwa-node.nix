@@ -3,9 +3,9 @@
   host = "localhost";
   port = "\${port}";
   executable = {
-    command = "bun";
+    command = "node";
     args = [
-      "$JAVASCRIPT_DAP_DEBUG_SERVER"
+      "/home/oung/.config/js-debug/src/dapDebugServer.js"
       "\${port}"
     ];
   };

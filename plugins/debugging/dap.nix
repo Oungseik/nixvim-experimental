@@ -7,6 +7,19 @@
     dap = {
       enable = true;
 
+      adapters.servers = {
+        pwa-node = import ./servers/pwa-node.nix;
+      };
+
+      configurations = {
+        javascript = [
+          (import ./configurations/javascript.nix)
+        ];
+        typescript = [
+          (import ./configurations/typescript.nix)
+        ];
+      };
+
       lazyLoad = {
         enable = true;
         settings = {
@@ -45,8 +58,6 @@
 
   extraConfigLuaPost = ''
     local dap, dapui = require("dap"), require("dapui")
-
-    dapui.setup({})
 
     dap.listeners.before.attach.dapui_config = function()
       dapui.open()
