@@ -2,6 +2,13 @@
   plugins.rustaceanvim = {
     enable = true;
 
+    lazyLoad = {
+      enable = true;
+      settings = {
+        ft = "rust";
+      };
+    };
+
     settings = {
       server = {
         cmd = [

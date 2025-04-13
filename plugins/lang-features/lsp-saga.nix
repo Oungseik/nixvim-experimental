@@ -48,18 +48,6 @@
       enable = true;
     };
 
-    # rename = {
-    #   autoSave = false;
-    #   keys = {
-    #     exec = "<CR>";
-    #     quit = [
-    #       "<C-k>"
-    #       "<Esc>"
-    #     ];
-    #     select = "x";
-    #   };
-    # };
-
     outline = {
       autoClose = true;
       autoPreview = true;
@@ -211,17 +199,5 @@
         desc = "Quickfix";
       };
     }
-    # {
-    #   mode = [
-    #     "n"
-    #     "t"
-    #   ];
-    #   key = "<A-3>";
-    #   action = "<cmd>Lspsaga term_toggle<CR>";
-    #   options = {
-    #     desc = "Toggle Term";
-    #     silent = true;
-    #   };
-    # }
   ];
 }
