@@ -1,7 +1,6 @@
 {
   imports = [
     ./ai
-    ./completions
     ./core
     # ./debugging
     ./dependencies
