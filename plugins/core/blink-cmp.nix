@@ -30,6 +30,7 @@
         ghost_text = {
           enabled = false;
         };
+        list.selection.preselect = false;
       };
 
       cmdline = {
@@ -53,6 +54,10 @@
         ];
         "<C-k>" = [
           "select_prev"
+          "fallback"
+        ];
+        "<CR>" = [
+          "accept"
           "fallback"
         ];
       };
