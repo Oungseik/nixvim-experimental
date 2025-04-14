@@ -11,13 +11,14 @@
         pwa-node = import ./servers/pwa-node.nix;
       };
 
+      adapters.executables = {
+        gdb = import ./servers/gdb.nix;
+      };
+
       configurations = {
-        javascript = [
-          (import ./configurations/javascript.nix)
-        ];
-        typescript = [
-          (import ./configurations/typescript.nix)
-        ];
+        javascript = import ./configurations/javascript.nix;
+        typescript = import ./configurations/typescript.nix;
+        rust = import ./configurations/rust.nix;
       };
 
       lazyLoad = {
