@@ -9,6 +9,9 @@
     require("mini.git").setup()
     require("mini.icons").setup()
     require("mini.pairs").setup()
+
+    require("mini.indentscope").setup({ only_current = true, draw = { animation = require("mini.indentscope").gen_animation.none() } })
+    vim.cmd.highlight("IndentLineCurrent guifg=#b7bdf8")
   '';
 
   keymaps = [

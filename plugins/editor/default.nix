@@ -2,8 +2,7 @@
   imports = [
     ./bufferline.nix
     ./comment.nix
-    ./ftplugins.nix
-    ./keymaps.nix
+    # ./ftplugins.nix
     ./lualine.nix
     ./options.nix
     ./nvim-tree.nix

@@ -2,6 +2,12 @@
   plugins = {
     bufferline = {
       enable = true;
+      lazyLoad = {
+        enable = true;
+        settings = {
+          event = [ "BufRead" ];
+        };
+      };
 
       settings.options = {
         separatorStyle = "slope"; # “slant”, “padded_slant”, “slope”, “padded_slope”, “thick”, “thin”

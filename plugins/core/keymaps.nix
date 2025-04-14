@@ -50,16 +50,6 @@
       action = "<C-w>k";
     }
 
-    # {
-    #   mode = "n";
-    #   key = "<Leader>p";
-    #   action = "<Nop>";
-    #   options = {
-    #     silent = true;
-    #     desc = "+Plugins More";
-    #   };
-    # }
-
     # swapping lines
     {
       mode = "n";
