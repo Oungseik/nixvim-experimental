@@ -23,14 +23,14 @@
           };
         };
         documentation = {
-          auto_show = true;
+          auto_show = false;
           auto_show_delay_ms = 500;
           treesitter_highlighting = true;
         };
         ghost_text = {
           enabled = false;
         };
-        list.selection.preselect = false;
+        # list.selection.preselect = true;
       };
 
       cmdline = {
@@ -56,10 +56,10 @@
           "select_prev"
           "fallback"
         ];
-        "<CR>" = [
-          "accept"
-          "fallback"
-        ];
+        # "<CR>" = [
+        #   "accept"
+        #   "fallback"
+        # ];
       };
     };
   };
