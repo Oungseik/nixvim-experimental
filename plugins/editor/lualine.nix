@@ -2,6 +2,13 @@
   plugins.lualine = {
     enable = true;
 
+    lazyLoad = {
+      enable = true;
+      settings = {
+        event = [ "BufRead" ];
+      };
+    };
+
     settings = {
 
       options = {

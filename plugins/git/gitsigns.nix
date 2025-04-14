@@ -1,6 +1,12 @@
 {
   plugins.gitsigns = {
     enable = true;
+    lazyLoad = {
+      enable = true;
+      settings = {
+        event = [ "BufRead" ];
+      };
+    };
 
     settings = {
       trouble = false;

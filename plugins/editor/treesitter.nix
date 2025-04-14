@@ -2,6 +2,13 @@
   plugins = {
     treesitter = {
       enable = true;
+
+      lazyLoad = {
+        enable = true;
+        settings = {
+          cmd = [ "BufAdd" ];
+        };
+      };
       nixvimInjections = true;
       folding = false;
       settings = {
@@ -13,7 +20,7 @@
     };
 
     treesitter-refactor = {
-      enable = true;
+      enable = false;
       highlightDefinitions = {
         enable = true;
         # Set to false if you have an `updatetime` of ~100.
