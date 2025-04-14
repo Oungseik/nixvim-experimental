@@ -43,16 +43,16 @@
           text = "";
           texthl = "DapBreakpointCondition";
         };
-        # dapLogPoint = {
-        #   text = "◆";
-        #   texthl = "DapLogPoint";
-        # };
+        dapLogPoint = {
+          text = "";
+          texthl = "DapLogPoint";
+        };
         dapBreakpointRejected = {
           text = "◆";
           texthl = "DapLogPointRejected";
         };
         dapStopped = {
-          text = "";
+          text = "";
           texthl = "DapStopped";
         };
       };
