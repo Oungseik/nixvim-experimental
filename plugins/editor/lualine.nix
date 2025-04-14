@@ -35,53 +35,6 @@
         lualine_a = [ { __unkeyed-1 = "mode"; } ];
         lualine_b = [
           {
-            __unkeyed-1 = "branch";
-            icon = "";
-          }
-        ];
-        lualine_c = [
-          {
-            __unkeyed-1 = "diff";
-            symbols = {
-              added = " ";
-              modified = " ";
-              removed = " ";
-            };
-          }
-        ];
-
-        # right
-        lualine_x = [
-          {
-            __unkeyed-1 = "diagnostics";
-            sources = [ "nvim_lsp" ];
-            symbols = {
-              error = " ";
-              warn = " ";
-              info = " ";
-              hint = "󰝶 ";
-            };
-          }
-          { __unkeyed-1 = "navic"; }
-          {
-            __unkeyed-1.__raw = ''
-              function()
-                local icon = " "
-                local status = require("copilot.api").status.data
-                return icon .. (status.message or " ")
-              end,
-
-              cond = function()
-               local ok, clients = pcall(vim.lsp.get_clients, { name = "copilot", bufnr = 0 })
-               return ok and #clients > 0
-              end,
-              color = { fg = "#a6da95" },
-            '';
-          }
-        ];
-
-        lualine_y = [
-          {
             __unkeyed-1.__raw = ''
               function()
                 local buf_clients = vim.lsp.get_clients { bufnr = 0 }
@@ -105,6 +58,53 @@
                 return language_servers
               end,
             '';
+          }
+        ];
+        lualine_c = [
+          { __unkeyed-1 = "navic"; }
+          {
+            __unkeyed-1.__raw = ''
+              function()
+                local icon = " "
+                local status = require("copilot.api").status.data
+                return icon .. (status.message or " ")
+              end,
+
+              cond = function()
+               local ok, clients = pcall(vim.lsp.get_clients, { name = "copilot", bufnr = 0 })
+               return ok and #clients > 0
+              end,
+              color = { fg = "#a6da95" },
+            '';
+          }
+          {
+            __unkeyed-1 = "diagnostics";
+            sources = [ "nvim_lsp" ];
+            symbols = {
+              error = " ";
+              warn = " ";
+              info = " ";
+              hint = "󰝶 ";
+            };
+          }
+        ];
+
+        # right
+        lualine_x = [
+          {
+            __unkeyed-1 = "diff";
+            symbols = {
+              added = " ";
+              modified = " ";
+              removed = " ";
+            };
+          }
+        ];
+
+        lualine_y = [
+          {
+            __unkeyed-1 = "branch";
+            icon = "";
           }
         ];
         lualine_z = [ { __unkeyed-1 = "location"; } ];
