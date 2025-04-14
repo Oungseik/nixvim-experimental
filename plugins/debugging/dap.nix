@@ -40,15 +40,20 @@
           texthl = "DapBreakpoint";
         };
         dapBreakpointCondition = {
-          text = "";
+          text = "";
           texthl = "DapBreakpointCondition";
         };
-        dapLogPoint = {
-          text = "◆";
-          texthl = "DapLogPoint";
-        };
+        # dapLogPoint = {
+        #   text = "◆";
+        #   texthl = "DapLogPoint";
+        # };
         dapBreakpointRejected = {
-          text = "";
+          text = "◆";
+          texthl = "DapLogPointRejected";
+        };
+        dapStopped = {
+          text = "";
+          texthl = "DapStopped";
         };
       };
     };
