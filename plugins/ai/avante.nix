@@ -11,6 +11,12 @@
   };
   plugins.copilot-lua = {
     enable = true;
+    lazyLoad = {
+      enable = true;
+      settings = {
+        event = [ "BufRead" ];
+      };
+    };
     settings = {
       copilot_node_command = "${pkgs.nodejs_22}/bin/node";
     };
