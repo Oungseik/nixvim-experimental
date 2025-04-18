@@ -10,6 +10,8 @@
     };
 
     settings = {
+      dap.autolload_configurations = false;
+
       server = {
         cmd = [
           "rustup"
