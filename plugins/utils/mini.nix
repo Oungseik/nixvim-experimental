@@ -4,10 +4,12 @@
   };
 
   extraConfigLua = ''
-    require("mini.align").setup()
+    -- rarely use
+    -- require("mini.align").setup()
     require('mini.bufremove').setup()
     require("mini.git").setup()
-    require("mini.icons").setup()
+    -- not sure this is needed when devicon is enabled
+    -- require("mini.icons").setup()
     require("mini.pairs").setup()
 
     require("mini.indentscope").setup({ only_current = true, draw = { animation = require("mini.indentscope").gen_animation.none() } })
