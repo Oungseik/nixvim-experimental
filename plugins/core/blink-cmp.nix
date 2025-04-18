@@ -4,10 +4,10 @@
 
     # lazy loading for this plugin does not work
     lazyLoad = {
-      enable = false;
+      enable = true;
 
       settings = {
-        event = [ "BufEnter" ];
+        event = [ "BufRead" ];
       };
     };
 

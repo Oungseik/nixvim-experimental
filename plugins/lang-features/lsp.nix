@@ -29,6 +29,13 @@
     lsp = {
       enable = true;
 
+      lazyLoad = {
+        enable = true;
+        settings = {
+          event = [ "BufAdd" ];
+        };
+      };
+
       servers = {
 
         clangd.enable = true;
