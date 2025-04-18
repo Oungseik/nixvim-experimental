@@ -7,7 +7,7 @@
       enable = true;
 
       settings = {
-        event = [ "BufRead" ];
+        event = [ "BufEnter" ];
       };
     };
 
