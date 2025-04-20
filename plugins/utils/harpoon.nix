@@ -1,6 +1,12 @@
 {
   plugins.harpoon = {
     enable = true;
+    lazyLoad = {
+      enable = false;
+      settings = {
+        event = [ "VimEnter" ];
+      };
+    };
   };
 
   keymaps = [
