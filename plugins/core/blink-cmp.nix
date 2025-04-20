@@ -16,7 +16,7 @@
       completion = {
         accept = {
           auto_brackets = {
-            enabled = true;
+            enabled = false;
             semantic_token_resolution = {
               enabled = false;
             };
