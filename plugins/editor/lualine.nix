@@ -60,7 +60,7 @@
                 end
 
                 local unique_client_names = table.concat(buf_client_names, ", ")
-                local language_servers = string.format("  %s", unique_client_names)
+                local language_servers = #buf_client_names > 0 and string.format("  %s", unique_client_names) or "LSP Inactive"
 
                 return language_servers
               end,
