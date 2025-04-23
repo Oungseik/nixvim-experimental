@@ -56,10 +56,10 @@
           "select_prev"
           "fallback"
         ];
-        # "<CR>" = [
-        #   "accept"
-        #   "fallback"
-        # ];
+        "<C-e>" = [
+          "select_and_accept"
+          "fallback"
+        ];
       };
     };
   };
