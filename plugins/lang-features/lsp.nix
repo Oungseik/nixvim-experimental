@@ -12,8 +12,10 @@
     })
   '';
 
-  diagnostics.virtual_lines = false;
-  diagnostics.virtual_text = true;
+  diagnostic.settings = {
+    virtual_lines = false;
+    virtual_text = true;
+    }; 
 
   plugins = {
     lsp-lines.enable = true;
@@ -25,7 +27,6 @@
         "gleam"
         "gopls"
         "lua_ls"
-        "marksman"
         "nil_ls"
         "taplo"
       ];
@@ -54,7 +55,6 @@
           installGhc = false;
         };
         jsonls.enable = true;
-        marksman.enable = true;
         nil_ls.enable = true;
         pyright.enable = true;
         svelte.enable = true;
@@ -64,12 +64,17 @@
 
         denols = {
           enable = true;
-          rootDir.__raw = ''require("lspconfig").util.root_pattern("deno.json", "deno.jsonc")'';
+          rootMarkers = [
+            "deno.jsono"
+            "deno.jsonc"
+          ];
         };
 
         ts_ls = {
           enable = true;
-          rootDir.__raw = ''require("lspconfig").util.root_pattern("package.json")'';
+          rootMarkers = [
+            "package.json"
+          ];
           extraOptions = {
             single_file_support = false;
           };
