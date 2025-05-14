@@ -15,7 +15,7 @@
   diagnostic.settings = {
     virtual_lines = false;
     virtual_text = true;
-    }; 
+  };
 
   plugins = {
     lsp-lines.enable = true;
@@ -63,11 +63,14 @@
         astro.enable = true;
 
         denols = {
-          enable = true;
+          enable = false;
           rootMarkers = [
             "deno.jsono"
             "deno.jsonc"
           ];
+          extraOptions = {
+            single_file_support = false;
+          };
         };
 
         ts_ls = {
