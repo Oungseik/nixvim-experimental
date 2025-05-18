@@ -16,8 +16,8 @@
           ""
         ];
 
-        project.limit = 6;
-        mru.limit = 6;
+        mru.limit = 10;
+        project.limit = 10;
       };
     };
   };
