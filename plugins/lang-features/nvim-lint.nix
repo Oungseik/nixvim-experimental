@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   plugins.lint = {
-    enable = true;
+    enable = false;
 
     linters = {
       golangcilint = {

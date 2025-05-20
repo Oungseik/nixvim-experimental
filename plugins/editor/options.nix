@@ -6,11 +6,11 @@
   };
 
   performance.byteCompileLua = {
-      enable = true;
-      configs = true;
-      initLua = true;
-      nvimRuntime = true;
-      plugins = true;
+    enable = true;
+    configs = true;
+    initLua = true;
+    nvimRuntime = true;
+    plugins = true;
   };
 
   extraConfigLua = ''
@@ -44,8 +44,11 @@
     splitright = true;
     splitkeep = "screen";
     scrolloff = 8;
-    foldmethod = "manual";
-    foldenable = false;
+    # foldmethod = "manual";
+    foldenable = true;
+    foldcolumn = "0";
+    foldlevel = 99;
+    foldlevelstart = 99;
     linebreak = true;
     cursorline = true;
     signcolumn = "yes";

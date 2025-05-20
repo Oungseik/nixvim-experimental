@@ -1,13 +1,21 @@
 {
   extraConfigLuaPre = ''
-    vim.fn.sign_define("DiagnosticSignError", { text = "", texthl = "DiagnosticSignError", linehl = "", numhl = "" })
-    vim.fn.sign_define("DiagnosticSignWarn", { text = "", texthl = "DiagnosticSignWarn", linehl = "", numhl = "" })
-    vim.fn.sign_define("DiagnosticSignHint", { text = "󰌵", texthl = "DiagnosticSignHint", linehl = "", numhl = "" })
-    vim.fn.sign_define("DiagnosticSignInfo", { text = "", texthl = "DiagnosticSignInfo", linehl = "", numhl = "" })
+    vim.diagnostic.config({
+      signs = { 
+        text = { 
+          [vim.diagnostic.severity.ERROR] = "", 
+          [vim.diagnostic.severity.WARN] = "" ,
+          [vim.diagnostic.severity.HINT] = "󰌵", 
+          [vim.diagnostic.severity.INFO] = "", 
+        }, 
+      },
+    })
   '';
 
-  diagnostics.virtual_lines = false;
-  diagnostics.virtual_text = true;
+  diagnostic.settings = {
+    virtual_lines = false;
+    virtual_text = true;
+  };
 
   plugins = {
     lsp-lines.enable = true;
@@ -19,7 +27,6 @@
         "gleam"
         "gopls"
         "lua_ls"
-        "marksman"
         "nil_ls"
         "taplo"
       ];
@@ -28,6 +35,13 @@
 
     lsp = {
       enable = true;
+
+      lazyLoad = {
+        enable = true;
+        settings = {
+          event = [ "BufAdd" ];
+        };
+      };
 
       servers = {
 
@@ -41,7 +55,6 @@
           installGhc = false;
         };
         jsonls.enable = true;
-        marksman.enable = true;
         nil_ls.enable = true;
         pyright.enable = true;
         svelte.enable = true;
@@ -50,13 +63,21 @@
         astro.enable = true;
 
         denols = {
-          enable = true;
-          rootDir.__raw = ''require("lspconfig").util.root_pattern("deno.json", "deno.jsonc")'';
+          enable = false;
+          rootMarkers = [
+            "deno.jsono"
+            "deno.jsonc"
+          ];
+          extraOptions = {
+            single_file_support = false;
+          };
         };
 
         ts_ls = {
           enable = true;
-          rootDir.__raw = ''require("lspconfig").util.root_pattern("package.json")'';
+          rootMarkers = [
+            "package.json"
+          ];
           extraOptions = {
             single_file_support = false;
           };

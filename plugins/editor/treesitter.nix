@@ -4,9 +4,9 @@
       enable = true;
 
       lazyLoad = {
-        enable = true;
+        enable = false;
         settings = {
-          cmd = [ "BufAdd" ];
+          cmd = [ "BufEnter" ];
         };
       };
       nixvimInjections = true;

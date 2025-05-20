@@ -4,7 +4,7 @@
 
     # lazy loading for this plugin does not work
     lazyLoad = {
-      enable = false;
+      enable = true;
 
       settings = {
         event = [ "BufEnter" ];
@@ -16,7 +16,7 @@
       completion = {
         accept = {
           auto_brackets = {
-            enabled = true;
+            enabled = false;
             semantic_token_resolution = {
               enabled = false;
             };
@@ -56,10 +56,10 @@
           "select_prev"
           "fallback"
         ];
-        # "<CR>" = [
-        #   "accept"
-        #   "fallback"
-        # ];
+        "<C-e>" = [
+          "select_and_accept"
+          "fallback"
+        ];
       };
     };
   };
