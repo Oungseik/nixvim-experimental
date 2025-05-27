@@ -89,6 +89,7 @@
         nix = [ "nixfmt" ];
         python = [ "black" ];
         rust = [ "rustfmt" ];
+        haskell = [ "fourmolu" ];
       };
     };
 
