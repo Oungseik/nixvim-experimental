@@ -8,7 +8,7 @@
     ./git
     ./lang-features
     ./snippets
-    ./tests
+    # ./tests
     ./ui
     ./utils
   ];
