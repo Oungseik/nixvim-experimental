@@ -1,7 +1,10 @@
 {
   imports = [
     ./blink-cmp.nix
+    ./bufferline.nix
     ./keymaps.nix
+    ./lualine.nix
+    ./treesitter.nix
   ];
 
   plugins = {
