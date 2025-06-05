@@ -3,7 +3,6 @@
     ./ai
     ./core
     ./debugging
-    ./dependencies
     ./editor
     ./git
     ./lang-features
