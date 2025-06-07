@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   plugins.dressing = {
-    enable = true;
+    enable = false;
     lazyLoad = {
       enable = true;
       settings = {

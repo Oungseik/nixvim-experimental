@@ -61,6 +61,7 @@
     expandtab = true;
     smartindent = true;
     breakindent = true;
+    jumpoptions = "";
   };
 
   filetype.extension = {

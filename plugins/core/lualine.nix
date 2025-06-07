@@ -13,13 +13,15 @@
 
       options = {
         globalstatus = true;
-        theme = "catppuccin";
+        theme = "auto";
 
-        disabledFiletypes = {
+        disabled_filetypes = {
           statusline = [
             "startup"
             "alpha"
             "NvimTree"
+            "neo-tree"
+            "sagaoutline"
           ];
         };
 

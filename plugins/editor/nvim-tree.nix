@@ -1,7 +1,10 @@
 {
   plugins.nvim-tree = {
     enable = true;
-    updateFocusedFile.enable = true;
+    updateFocusedFile = {
+      enable = true;
+      ignoreList = [ "node_modules" ];
+    };
 
     view = {
       side = "right";
