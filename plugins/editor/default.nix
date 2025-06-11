@@ -3,7 +3,8 @@
     ./comment.nix
     # ./ftplugins.nix
     ./options.nix
-    ./nvim-tree.nix
+    ./neo-tree.nix
+    # ./nvim-tree.nix
     ./telescope.nix
   ];
 }
