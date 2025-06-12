@@ -22,6 +22,13 @@
             "NvimTree"
             "neo-tree"
             "sagaoutline"
+
+            "dapui_scopes"
+            "dapui_breakpoints"
+            "dapui_stacks"
+            "dapui_watches"
+            "dap-repl"
+            "dapui_console"
           ];
         };
 
