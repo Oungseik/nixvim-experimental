@@ -3,13 +3,13 @@
     enable = true;
 
     # lazy loading for this plugin does not work
-    lazyLoad = {
-      enable = true;
-
-      settings = {
-        event = [ "BufEnter" ];
-      };
-    };
+    # lazyLoad = {
+    #   enable = true;
+    #
+    #   settings = {
+    #     event = [ "BufEnter" ];
+    #   };
+    # };
 
     settings = {
 
