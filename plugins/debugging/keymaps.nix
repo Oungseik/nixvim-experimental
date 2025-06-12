@@ -39,15 +39,6 @@
   }
   {
     mode = "n";
-    key = "<leader>dl";
-    action = ":lua require('dap').list_breakpoints()<cr>";
-    options = {
-      silent = true;
-      desc = "List All Breakpoint";
-    };
-  }
-  {
-    mode = "n";
     key = "<leader>dC";
     action = ":lua require('dap').clear_breakpoints()<cr>";
     options = {
@@ -96,73 +87,46 @@
   {
     mode = "n";
     key = "<leader>du";
-    action = "<Nop>";
-    options = {
-      silent = true;
-      desc = "Dap UI";
-    };
-  }
-  {
-    mode = "n";
-    key = "<leader>duo";
     action = ":lua require('dapui').toggle()<cr>";
     options = {
       silent = true;
-      desc = "Open Dap UI";
+      desc = "Toggle Dap UI";
     };
   }
   {
     mode = "n";
-    key = "<leader>duc";
-    action = ":lua require('dapui').close()<cr>";
-    options = {
-      silent = true;
-      desc = "Close Dap UI";
-    };
-  }
-  {
-    mode = "n";
-    key = "<leader>do";
-    action = "<Nop>";
-    options = {
-      silent = true;
-      desc = "Open Float Window";
-    };
-  }
-  {
-    mode = "n";
-    key = "<leader>dol";
+    key = "<leader>dl";
     action = ":lua require('dapui').float_element('scopes', { enter = true })<cr>";
     options = {
       silent = true;
-      desc = "Open Locals Float Window";
+      desc = "Locals Float Window";
     };
   }
   {
     mode = "n";
-    key = "<leader>doe";
+    key = "<leader>de";
     action = ":lua require('dapui').float_element('watches', { enter = true })<cr>";
     options = {
       silent = true;
-      desc = "Open Expressions Float Window";
+      desc = "Expressions Float Window";
     };
   }
   {
     mode = "n";
-    key = "<leader>dob";
+    key = "<leader>dL";
     action = ":lua require('dapui').float_element('breakpoints', { enter = true })<cr>";
     options = {
       silent = true;
-      desc = "Open Breakpoints Float Window";
+      desc = "Breakpoints Float Window";
     };
   }
   {
     mode = "n";
-    key = "<leader>dos";
+    key = "<leader>ds";
     action = ":lua require('dapui').float_element('stacks', { enter = true })<cr>";
     options = {
       silent = true;
-      desc = "Open Stacks Float Window";
+      desc = "Stacks Float Window";
     };
   }
 ]
