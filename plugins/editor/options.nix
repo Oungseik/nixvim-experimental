@@ -62,6 +62,7 @@
     smartindent = true;
     breakindent = true;
     jumpoptions = "";
+    winborder = "rounded";
   };
 
   filetype.extension = {

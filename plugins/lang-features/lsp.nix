@@ -116,6 +116,45 @@
         silent = true;
       };
     }
+    {
+      mode = "n";
+      key = "<leader>la";
+      action = "<cmd>lua vim.lsp.buf.code_action()<cr>";
+      options = {
+        desc = "Code Action";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>li";
+      action = "<cmd>lua vim.lsp.buf.implementation()<cr>";
+      options = {
+        desc = "Implementation";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>lr";
+      action = "<cmd>lua vim.lsp.buf.rename()<cr>";
+      options = {
+        desc = "Rename";
+        silent = true;
+      };
+    }
+    {
+      mode = [
+        "n"
+        "v"
+      ];
+      key = "<leader>lq";
+      action = ":lua vim.diagnostic.setloclist()<cr>";
+      options = {
+        silent = true;
+        desc = "Quickfix";
+      };
+    }
   ];
 
 }

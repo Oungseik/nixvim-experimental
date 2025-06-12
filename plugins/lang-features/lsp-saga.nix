@@ -40,8 +40,8 @@
 
     lightbulb = {
       enable = false;
-      sign = false;
-      virtualText = true;
+      # sign = false;
+      # virtualText = true;
     };
 
     implement = {
@@ -97,24 +97,15 @@
         silent = true;
       };
     }
-    {
-      mode = "n";
-      key = "<leader>ld";
-      action = "<cmd>Lspsaga finder def<CR>";
-      options = {
-        desc = "Find Definition";
-        silent = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>li";
-      action = "<cmd>Lspsaga finder imp<CR>";
-      options = {
-        desc = "Find Implementation";
-        silent = true;
-      };
-    }
+    # {
+    #   mode = "n";
+    #   key = "<leader>ld";
+    #   action = "<cmd>Lspsaga finder def<CR>";
+    #   options = {
+    #     desc = "Find Definition";
+    #     silent = true;
+    #   };
+    # }
     {
       mode = "n";
       key = "<leader>lt";
@@ -133,24 +124,33 @@
         silent = true;
       };
     }
-    {
-      mode = "n";
-      key = "<leader>lr";
-      action = "<cmd>Lspsaga rename<CR>";
-      options = {
-        desc = "Rename";
-        silent = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>la";
-      action = "<cmd>Lspsaga code_action<CR>";
-      options = {
-        desc = "Code Action";
-        silent = true;
-      };
-    }
+    # {
+    #   mode = "n";
+    #   key = "<leader>lr";
+    #   action = "<cmd>Lspsaga rename<CR>";
+    #   options = {
+    #     desc = "Rename";
+    #     silent = true;
+    #   };
+    # }
+    # {
+    #   mode = "n";
+    #   key = "<leader>li";
+    #   action = "<cmd>Lspsaga finder imp<CR>";
+    #   options = {
+    #     desc = "Find Implementation";
+    #     silent = true;
+    #   };
+    # }
+    # {
+    #   mode = "n";
+    #   key = "<leader>la";
+    #   action = "<cmd>Lspsaga code_action<CR>";
+    #   options = {
+    #     desc = "Code Action";
+    #     silent = true;
+    #   };
+    # }
     {
       mode = "n";
       key = "<leader>ld";
@@ -176,18 +176,6 @@
       options = {
         desc = "Previous Diagnostic";
         silent = true;
-      };
-    }
-    {
-      mode = [
-        "n"
-        "v"
-      ];
-      key = "<leader>lq";
-      action = ":lua vim.diagnostic.setloclist()<cr>";
-      options = {
-        silent = true;
-        desc = "Quickfix";
       };
     }
   ];
