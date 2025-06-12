@@ -126,15 +126,6 @@
     }
     {
       mode = "n";
-      key = "K";
-      action = "<cmd>Lspsaga hover_doc<CR>";
-      options = {
-        desc = "Hover";
-        silent = true;
-      };
-    }
-    {
-      mode = "n";
       key = "<leader>lo";
       action = "<cmd>Lspsaga outline<CR>";
       options = {
