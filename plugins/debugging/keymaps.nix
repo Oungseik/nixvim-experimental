@@ -105,7 +105,7 @@
   {
     mode = "n";
     key = "<leader>duo";
-    action = ":lua require('dapui').open()<cr>";
+    action = ":lua require('dapui').toggle()<cr>";
     options = {
       silent = true;
       desc = "Open Dap UI";
