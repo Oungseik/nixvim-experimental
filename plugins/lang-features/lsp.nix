@@ -136,6 +136,15 @@
     }
     {
       mode = "n";
+      key = "K";
+      action = "<cmd>lua vim.lsp.buf.hover({ border = 'rounded' })<cr>";
+      options = {
+        desc = "Hover";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>lr";
       action = "<cmd>lua vim.lsp.buf.rename()<cr>";
       options = {
@@ -156,5 +165,4 @@
       };
     }
   ];
-
 }
