@@ -1,7 +1,7 @@
 [
   {
     name = "Launch";
-    type = "gdb";
+    type = "gdb-rust";
     request = "launch";
     program.__raw = ''
       function() return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file") end
@@ -12,7 +12,7 @@
   }
   {
     name = "Select and attach to process";
-    type = "gdb";
+    type = "gdb-rust";
     request = "attach";
     program = ''
       function()
@@ -27,16 +27,16 @@
     '';
     cwd = "\${workspaceFolder}";
   }
-  {
-    name = "Attach to gdbserver :1234";
-    type = "gdb";
-    request = "attach";
-    target = "localhost:1234";
-    program = ''
-      function()
-        return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
-      end
-    '';
-    cwd = "\${workspaceFolder}";
-  }
+  # {
+  #   name = "Attach to gdbserver :1234";
+  #   type = "gdb";
+  #   request = "attach";
+  #   target = "localhost:1234";
+  #   program = ''
+  #     function()
+  #       return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+  #     end
+  #   '';
+  #   cwd = "\${workspaceFolder}";
+  # }
 ]

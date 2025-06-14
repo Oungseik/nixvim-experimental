@@ -12,7 +12,7 @@
       };
 
       adapters.executables = {
-        gdb = import ./servers/gdb.nix;
+        gdb-rust = import ./servers/gdb-rust.nix;
       };
 
       configurations = {
