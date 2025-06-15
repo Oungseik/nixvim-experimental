@@ -1,14 +1,5 @@
 { pkgs, ... }:
 {
-  plugins.dressing = {
-    enable = false;
-    lazyLoad = {
-      enable = true;
-      settings = {
-        event = [ "BufRead" ];
-      };
-    };
-  };
   plugins.copilot-lua = {
     enable = true;
     lazyLoad = {
@@ -33,13 +24,13 @@
     };
 
     settings = {
-      provider = "copilot";
+      provider = "gemini";
 
       providers = {
         gemini = {
           endpoint = "https://generativelanguage.googleapis.com/v1beta/models";
           api_key_name = "GEMINI_API_KEY";
-          model = "gemini-2.5-pro-exp-03-25";
+          model = "gemini-2.5-flash-preview-05-20";
           timeout = 30000;
           temperature = 0;
           max_tokens = 8192;

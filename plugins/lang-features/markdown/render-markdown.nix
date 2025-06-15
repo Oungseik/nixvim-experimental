@@ -11,7 +11,7 @@
       };
     };
     settings = {
-      enabled = false;
+      enabled = true;
       file_types = ["markdown" "Avante"];
       render_modes = ["n" "c" "t"];
     };
